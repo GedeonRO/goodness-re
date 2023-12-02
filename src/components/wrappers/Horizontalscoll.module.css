@@ -1,0 +1,87 @@
+.wrapper {
+    position: relative;
+    /* border: 2px solid yellow; */
+}
+
+.wrapper .i {
+    top: 50%;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    color: white;
+    z-index: 1;
+}
+
+.wrapper .i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper .i:first-child {
+    left: -20px;
+}
+
+.wrapper .i:last-child {
+    right: -20px;
+}
+
+.wrapper .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: space-around; */
+    flex: 1;
+    /* width: 100%; */
+    /* border: 2px solid red; */
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* gap: 16px; */
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 900px) {
+    .i {
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+.sectionwrapper {
+    /* margin: 0 12px; */
+    /* background: grey; */
+    margin: 0 auto;
+    margin-top: 1.5rem;
+
+    width: calc(100% - 12px);
+    /* Largeur totale de la grille */
+    align-self: center;
+
+}
+
+.sectionscrollable {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* border: 1px solid; */
+}
+
+.sectioncontainer {
+    display: flex;
+    align-items: center;
+}
+
+.sectionchildren {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); */
+    gap: 15px 24px;
+    flex: 1 1 auto;
+    display: flex;
+    /* Utilisation de flexbox pour les éléments de la grille */
+    white-space: nowrap;
+}
+
+.sectiontitle {
+    margin-bottom: 0.5rem;
+    margin-left: 12px;
+}
+
+.i {
+    display: none;
+}
+
+.itemvisible {
+    display: block;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .itemvisible {
+        display: none;
+    }
+
+
+    .sectionchildren {
+        display: flex;
+        overflow: auto;
+        scroll-behavior: smooth;
+
+    }
+
+    .sectionchildren::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sectiontitle {
+        margin-left: 6px;
+    }
+
+}

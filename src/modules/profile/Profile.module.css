@@ -1,0 +1,403 @@
+.profilewrapper {
+    padding: 10px 6.91rem;
+    display: flex;
+    align-items: flex-start;
+    /* margin: 1rem 0; */
+}
+
+
+html .pt4 {
+    padding-top: 1.5rem
+}
+
+html .dropdown-ta div {
+    border-radius: 1.25rem
+}
+
+.profileleftcontainer {
+    padding: 22px 10px 22px 22px;
+    width: 25%;
+    margin-right: 3rem;
+
+    color: rgb(43, 52, 69);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(43, 52, 69, 0.1) 0px 4px 16px;
+    background-color: rgb(255, 255, 255);
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileleftcontainer::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.profilerightcontainer {
+    padding: 10px;
+    flex: 1 1 auto;
+    /* border: 1px solid; */
+}
+
+.menuitemwrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    cursor: pointer;
+    /* border: 1px solid; */
+}
+
+.menuitemleft {
+    display: flex;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 20px;
+}
+
+thead tr {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+tbody tr {
+    box-shadow: rgba(43, 52, 69, 0.1) 0px 4px 16px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+tbody tr td {
+    padding: 15px 15px 15px 0;
+    font-size: 15px;
+}
+
+.separator {
+    background: none;
+    padding: 5px;
+    box-shadow: none;
+    /* background: red; */
+}
+
+.userwithphoto {
+    padding: 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(43, 52, 69);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+    overflow: hidden;
+    border-radius: 4px;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 60%;
+    margin-right: 12px;
+}
+
+.userprofilephoto {
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+}
+
+.datausername {
+    margin-left: 10px;
+}
+
+.userappinfos {
+    display: flex;
+    /* border: 1px solid; */
+    /* background: grey; */
+}
+
+.userinfos {
+    background-color: rgb(255, 255, 255);
+    color: rgb(43, 52, 69);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: auto;
+    /* padding: 0.75rem 1.5rem; */
+    /* padding: 22px; */
+    padding: 14px;
+    margin-top: 1rem;
+}
+
+.userinfoitem {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    flex: 1 1 0px;
+}
+
+.userinfoitemvalue {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgb(125, 135, 156);
+    margin-bottom: 4px;
+    text-align: left;
+    text-transform: none;
+    white-space: normal;
+    flex: 1 1 0px;
+}
+
+.css-m860y2 {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    /* padding-left: 24px;
+    padding-top: 24px; */
+    box-sizing: border-box;
+    flex: 1 1 0px;
+}
+
+.css1tz8m30 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: -32px;
+    width: calc(100% + 32px);
+    margin-left: -32px;
+    box-sizing: border-box;
+}
+
+.userorderdetailitem {
+    /* flex-basis: 50%; */
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    /* max-width: 50%; */
+    box-sizing: border-box;
+    margin-right: 20px;
+    /* border: 1px solid; */
+}
+
+.css1916bed {
+    background-color: rgb(255, 255, 255);
+    color: rgb(43, 52, 69);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+    /* overflow: hidden; */
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    /* padding: 1rem 1.25rem; */
+    /* padding: 15px 25px; */
+    -webkit-box-align: center;
+    /* align-items: center; */
+    flex-direction: column;
+    /* padding-left: 12px; */
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    /* -webkit- */
+}
+
+.cssm860y2 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    box-sizing: border-box;
+    /* flex-direction: column; */
+    /* flex-basis: 100%; */
+    -webkit-box-flex: 0;
+    max-width: 100%;
+    /* border: 1px solid; */
+}
+
+
+.cssyeda23 {
+    display: inline-block;
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+
+
+@media (min-width: 1280px) {
+    .cssm860y2 {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+
+    .userorderdetailitem {
+        flex-basis: 25%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 960px) {
+    .cssm860y2 {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+
+    .userorderdetailitem {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    .cssm860y2 {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+
+    .userorderdetailitem {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .cssm860y2 {
+        /* flex-wrap: wrap; */
+        margin-top: 1rem;
+        overflow: scroll;
+    }
+
+    .userappinfos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .profilewrapper {
+        flex-direction: column;
+        padding: 0px;
+        margin: 0;
+        position: relative;
+    }
+
+    .profileleftcontainer {
+        color: white;
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+        overflow: scroll;
+        /* flex-wrap: wrap; */
+        margin-right: 0;
+        background: none;
+        border-radius: 0;
+        /* background-color: rgb(246, 249, 252); */
+        background: #D23F57;
+        box-shadow: none;
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+        /* for Firefox */
+        /* justify-content: center; */
+    }
+
+
+    .menuitemwrapper {
+        padding: 10px 0;
+        margin: 0;
+        /* padding: 6px 2px; */
+        margin-right: 10px;
+        /* background: green; */
+        /* color: white; */
+        color: white;
+        /* border: 1px solid; */
+    }
+
+
+    .profilerightcontainer {
+        padding: 10px;
+        width: 100%;
+    }
+
+
+    .med {
+        opacity: 0;
+    }
+
+    .userinfos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .userinfoitem {
+        margin-bottom: 12px;
+    }
+
+
+    tbody tr td {
+        font-size: 13px;
+    }
+
+    /* 
+    .css1916bed {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .userwithphoto {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1222px) {
+    .profilewrapper {
+        padding: 10px 4rem;
+    }
+
+    .profileleftcontainer {
+        /* width: 100%;
+        flex-direction: row;
+        padding: 0;
+        overflow: scroll;
+        margin-right: 0;
+        background: none;
+        border-radius: 0; */
+    }
+}

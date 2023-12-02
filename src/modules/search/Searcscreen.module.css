@@ -1,0 +1,108 @@
+.searchscreenwrapper {
+    padding: 15px;
+}
+
+.searchinfowrapper {
+    background-color: rgb(255, 255, 255);
+    color: rgb(43, 52, 69);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+    overflow: hidden;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.searchinfotitle {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: none;
+    white-space: normal;
+}
+
+.searchresult {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    flex: 1;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.searchcontent {
+    /* margin-top: 1.5rem; */
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 22px;
+}
+
+.searchfilter {
+    padding: 10px;
+    background: white;
+}
+
+.searchresults {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.searchnoresults {
+    display: none;
+}
+
+.searchfiltertitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filtercontent {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemheader {
+    display: flex;
+    align-items: center;
+}
+
+.pricename {
+    margin-left: 5px;
+}
+
+.filterbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 900px) {
+    .searchscreenwrapper {
+        /* margin: 12px; */
+    }
+
+    .searchcontent {
+        /* margin-top: 12px; */
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        /* Une seule colonne */
+        grid-template-rows: auto auto;
+        /* Deux lignes */
+        gap: 22px;
+    }
+
+    .searchinfowrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,125 @@
+.servicewrapper {
+    padding: 12px;
+    min-height: 100vh;
+}
+
+.serviceheader {}
+
+.servicesslides {
+    height: 550px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.slidecontainer {
+    height: 100%;
+    background-size: contain;
+}
+
+._hseparator {
+    width: 15px;
+}
+
+._vseparator {
+    height: 15px;
+}
+
+.slideleftcontainer {
+    background-color: crimson;
+    /* border: 1px solid crimson; */
+    width: 43%;
+}
+
+.sliderightcontainer {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightslidestart {
+    flex: 1 1 auto;
+    height: 100%;
+}
+
+.rightslidetop {
+    height: 49%;
+    width: 100%;
+    background: cyan;
+    /* border: 1px solid cyan; */
+}
+
+.rightslidebottom {
+    height: 49%;
+    width: 100%;
+    background: lawngreen;
+    /* border: 1px solid lawngreen; */
+}
+
+.rightslideend {
+    width: 35%;
+    height: 100%;
+    /* border: 1px solid blueviolet; */
+    background: blueviolet;
+}
+
+.slideItem {
+    border-radius: 6px;
+}
+
+.servicetitle {
+    margin-left: 12px;
+}
+
+.servicedetails {
+    margin-top: 1.5rem;
+    padding: 10px;
+}
+
+.servicedescription {
+    font-size: 14px;
+}
+
+.servicecontactitle {
+    margin-top: 1.5rem;
+}
+
+.contactlinks {
+    display: flex;
+}
+
+.contactlinks div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.contactlinks img {
+    cursor: pointer;
+}
+
+.contactlink {
+    margin-right: 10px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px 24px;
+}
+
+.service {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+@media screen and (maw-width: 700px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px 24px;
+    }
+}

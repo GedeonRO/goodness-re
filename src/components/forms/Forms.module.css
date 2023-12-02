@@ -1,0 +1,84 @@
+.headersearchbar {}
+
+.searchbarinput {
+    height: 40px;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    line-height: 1;
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    border-style: none;
+    -webkit-appearance: textfield;
+    appearance: initial;
+    outline-offset: -2px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(43, 52, 69);
+}
+
+.searchbutton {}
+
+.inputformwrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.inputlabel {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+}
+
+.inputform {
+    border: 1px solid grey;
+    outline: 0;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.inputform:hover {
+    outline: 1;
+    outline-color: black;
+    border-color: black;
+}
+
+.inputform:focus {
+    border-color: #D23F57;
+}
+
+.customcheckboxwrapper {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customcheckboxwrapper:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.checkboxinput {
+    margin: 0 auto;
+    width: 40px;
+    padding: 5px;
+    transform: scale(1.4);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.searchbarinput:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .searchbarinput {
+        height: 40px;
+        padding-left: 0.5rem;
+        padding-right: 0.7rem;
+    }
+
+}

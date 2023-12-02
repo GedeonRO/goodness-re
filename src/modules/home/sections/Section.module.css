@@ -1,0 +1,61 @@
+.servicesslides {
+    height: 550px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.slidecontainer {
+    height: 100%;
+}
+
+._hseparator {
+    width: 15px;
+}
+
+._vseparator {
+    height: 15px;
+}
+
+.slideleftcontainer {
+    background-color: crimson;
+    border: 1px solid crimson;
+    width: 43%;
+}
+
+.sliderightcontainer {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightslidestart {
+    flex: 1 1 auto;
+    height: 100%;
+}
+
+.rightslidetop {
+    height: 49%;
+    width: 100%;
+    background: cyan;
+    border: 1px solid cyan;
+}
+
+.rightslidebottom {
+    height: 49%;
+    width: 100%;
+    background: lawngreen;
+    border: 1px solid lawngreen;
+}
+
+.rightslideend {
+    width: 35%;
+    height: 100%;
+    border: 1px solid blueviolet;
+    background: blueviolet;
+}
+
+.slideItem {
+    border-radius: 8px;
+}

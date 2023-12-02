@@ -1,0 +1,81 @@
+.buttonnogbwrapper {
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 16px;
+    border: 1px solid #D23F57;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #D23F57;
+    display: flex;
+    align-items: center;
+
+}
+
+.buttonnonbgtext {
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.buttonnogbwrapper:hover {
+    background: #d23f5780;
+    color: white;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+
+.buttonnogbwrapper:disabled {
+    border: 1px solid grey;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.buttonwithbgtext {}
+
+.buttonwithbgwrapper {
+    background: #D23F57;
+    color: white;
+
+    padding: 5px 15px;
+    text-align: center;
+    border: 1px solid #D23F57;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.cartitembutton {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: __Open_Sans_c8a2b8, __Open_Sans_Fallback_c8a2b8;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 1px solid #d23f5780;
+    color: rgb(210, 63, 87);
+    min-width: 0px;
+    min-height: 0px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 3px;
+}
+
+.cartitembutton.ok {
+    padding: 15px;
+}
